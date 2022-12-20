@@ -66,6 +66,11 @@ p span.i2{
 	text-indent: -1em;
 }
 
+p span.i3{
+	padding-left: 4em;
+	tex-indent: -1em;
+}
+
 span.elision{
 	margin: .5em;
 	margin-left: 3em;
