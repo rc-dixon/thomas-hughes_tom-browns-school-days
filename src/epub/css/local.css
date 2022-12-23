@@ -47,7 +47,6 @@ section > header [epub|type~="epigraph"] + *{
 /* End epigraphs in section headers */
 
 /* Poems */
-
 [epub|type~="z3998:poem", "z3998:verse", "z3998:song"] p{
 	text-align: initial;
 	text-indent: 0;
@@ -91,5 +90,15 @@ span.elision{
 [epub|type~="epigraph"] span.elision{
 	font-style: normal;
 }
-
 /* End poems */
+
+/* Letters */
+footer{
+	margin-top: 1em;
+	text-align: right;
+}
+
+[epub|type~="z3998:salutation"] + p{
+	text-indent: 0;
+}
+/* End letters */
