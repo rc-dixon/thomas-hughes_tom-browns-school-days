@@ -46,13 +46,24 @@ section > header [epub|type~="epigraph"] + *{
 }
 /* End epigraphs in section headers */
 
-[epub|type~="z3998:poem"] p > span{
+/* Poems */
+
+[epub|type~="z3998:poem", "z3998:verse", "z3998:song"] p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:poem", "z3998:verse", "z3998:song"] p + p{
+	margin-top: 1em;
+}
+
+[epub|type~="z3998:poem", "z3998:verse", "z3998:song"] p > span{
 	display: block;
 	padding-left: 1em;
 	text-indent: -1em;
 }
 
-[epub|type~="z3998:poem"] p > span + br{
+[epub|type~="z3998:poem", "z3998:verse", "z3998:song"] p > span + br{
 	display: none;
 }
 
@@ -80,3 +91,5 @@ span.elision{
 [epub|type~="epigraph"] span.elision{
 	font-style: normal;
 }
+
+/* End poems */
